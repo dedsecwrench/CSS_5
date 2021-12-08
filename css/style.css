@@ -354,4 +354,21 @@ h1{
     }
   }
 
+  .car{
+      transform: translate(-50%);
+      animation: car 1s linear infinite; 
+  }
+
+ @keyframes car{
+     100%{
+        transform: translateY(-1px);
+     }
+     50%{
+        transform: translateY(1px);
+     }
+     0%{
+        transform: translateY(-1px);
+     }
+ } 
+
 

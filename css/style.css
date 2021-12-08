@@ -1,0 +1,357 @@
+body{
+    margin:10px;
+}
+
+h1{
+    text-align: center ;
+    font-weight: bolder;
+}
+.container{
+    display:flex;
+    overflow-y: scroll;
+    flex-wrap: wrap;
+    justify-content: center;
+    column-gap: 50px;
+    background-color: yellow;
+    padding: 40px;
+}
+
+.box1{
+    background-color: tomato;
+    color:whitesmoke;
+    border: 2px solid black;
+    margin: 20px;
+    padding: 20px;
+    font-size: 16px;
+    height:100px;
+    width:100px;
+    animation-name: box1;
+    animation-duration: 15s;
+    animation-iteration-count: infinite;
+    animation-timing-function: ease-in-out;
+}
+
+
+@keyframes box1 {
+    0%{
+        transform: skewX(30deg);
+    } 
+    25%{
+         transform: skewX(-30deg);
+    }
+   50%{
+       transform: skewX(30deg);
+   }
+   75%{
+       transform: skewX(-30deg);
+   }
+   100%{
+       transform: skewX(30deg);
+   }
+}
+
+
+.box2{
+    background-color: rgb(101, 111, 201);
+    color:whitesmoke;
+    border: 2px solid black;
+    margin: 20px;
+    padding: 20px;
+    font-size: 16px;
+    height:100px;
+    width:100px;
+    animation-name: box2;
+    animation-duration: 15s;
+    animation-iteration-count: infinite;
+    animation-timing-function: ease-in-out;
+}
+
+@keyframes box2 {
+    0%{
+        transform: skewX(30deg);
+        transform: skewY(-30deg);
+    } 
+    25%{
+        transform: skewX(-30deg);
+        transform: skewY(30deg);
+    }
+   50%{
+    transform: skewX(30deg);
+    transform: skewY(-30deg);
+   }
+   75%{
+    transform: skewX(-30deg);
+    transform: skewY(30deg);
+   }
+   100%{
+    transform: skewX(30deg);
+    transform: skewY(-30deg);
+   }
+}
+
+
+.box3{
+    background-color: rgb(16, 109, 223);
+    color:whitesmoke;
+    border: 2px solid black;
+    margin: 20px;
+    padding: 20px;
+    font-size: 16px;
+    height:100px;
+    width:100px;
+    animation-name: box3;
+    animation-duration: 3s;
+    animation-iteration-count: infinite;
+    animation-timing-function: ease-in-out;
+    animation-delay: 1s;
+}
+
+@keyframes box3 {
+   100%{
+    transform: rotate(360deg);
+   }
+}
+
+.box4{
+    color:whitesmoke;
+    border: 2px solid black;
+    margin: 20px;
+    padding: 20px;
+    font-size: 16px;
+    height:100px;
+    width:100px;
+}
+
+.b1{
+    background-color: rgb(113, 223, 16);
+    animation-name: b1;
+    animation-duration: 3s;
+    animation-iteration-count: infinite;
+    animation-timing-function: ease-in-out;
+    animation-delay: 1s;
+    transition: 1s,1s;
+}
+
+@keyframes b1 {
+    0%{
+        transform: scale(1, 0.5);
+    } 
+    25%{
+        transform: scale(1,1);
+    }
+   50%{
+    transform: scale(1, 0.5);
+   }
+   75%{
+    transform: scale(1,1);
+   }
+   100%{
+    transform: scale(1, 0.5);
+   }
+ }
+
+.b2{
+    background-color: rgb(53, 53, 53);
+    animation-name: b2;
+    animation-duration: 3s;
+    animation-iteration-count: infinite;
+    animation-timing-function: ease-in-out;
+    animation-delay: 1s;
+}
+
+@keyframes b2 {
+    0%{
+        transform: scale(0.5, 1);
+    } 
+    25%{
+        transform: scale(1,1);
+    }
+   50%{
+    transform: scale(0.5, 1);
+   }
+   75%{
+    transform: scale(1,1);
+   }
+   100%{
+    transform: scale(0.5,1);
+   }
+ }
+
+.b3{
+    background-color: rgb(161, 16, 223);
+    animation-name: b3;
+    animation-duration: 10s;
+    animation-iteration-count: infinite;
+    animation-timing-function: ease-in-out;
+    animation-delay: 1s;
+}
+
+@keyframes b3 {
+   0%{
+    transform: rotate(90deg);
+   }
+      25%{
+        transform: rotate(-90deg);
+    }
+   50%{
+    transform: rotate(90deg);
+   }
+   75%{
+    transform: rotate(-90deg);
+   }
+   100%{
+    transform: rotate(90deg);
+   }
+ }
+
+
+ .container_2{
+    display:flex;
+    height:100%;
+    overflow-y: scroll;
+    flex-wrap: wrap;
+    justify-content: center;
+    column-gap: 50px;
+    background-color: yellow;
+    padding: 40px;
+    flex-direction: column;
+    align-content: center;
+}
+
+.box{
+    background-color: tomato;
+    color:whitesmoke;
+    border: 2px solid black;
+    margin: 20px;
+    padding: 20px;
+    font-size: 16px;
+    height:100px;
+    width:100px;
+    transition: 2s,3s;
+}
+
+.o1:hover{
+    width:300px;
+}
+
+.o2:hover{
+    height:300px;
+    width:300px;
+}
+
+.o3:hover{
+    width:300px;
+}
+
+.body1{
+    background-color: yellow;
+}
+
+.page{
+    padding-left: 40px;
+    margin: auto;
+    width:150px;
+    display: flex;
+    justify-content: space-around;
+    column-gap: 30px;
+}
+.back{
+    font-size: 25px;
+    background-color: rgb(242, 74, 74);
+    color: ghostwhite;
+    border-radius: 20px;
+    padding-left: 20px;
+    padding-right: 20px;
+    border: none;
+}
+.back:hover{
+    background-color:rgb(249, 16, 16);
+    color:white;
+}
+.next{
+    font-size: 25px;
+   background-color: forestgreen;
+   color: ghostwhite;
+   border-radius: 20px;
+   padding-left: 20px;
+   padding-right: 20px;
+   border:none;
+}
+.next:hover{
+    background-color: rgb(0, 97, 0);
+    color: ghostwhite;
+}
+
+
+
+.container_3{
+    width: 100%;
+    z-index: -10;
+}
+
+
+#bg-img{
+    background-repeat: repeat-x;
+    background-size:cover ;
+    background-image: url(https://cdn.theatlantic.com/thumbor/TC0sl8v8RLnQOcnRn6frkbAFR18=/1223x532:3164x1543/960x500/media/img/mt/2016/03/RTX283V4/original.jpg);
+}
+
+.bg2{
+    z-index: 10;
+    position: absolute;
+    bottom:200px;
+}
+.bg3{
+    z-index: 10;
+    position: absolute;
+    bottom:0px;
+}
+
+
+.img1{
+    position:absolute;
+    top:450px;
+    left:200px;
+}
+
+.img2{
+    position:relative;
+    top:50px;
+    right:420px;
+    animation: wheel 1.5s linear infinite;
+    animation-name: wheel;
+   
+}
+
+@keyframes wheel {
+    100%{
+     transform: rotate(360deg);
+    }
+ }
+
+.img3{
+    animation: wheel 1.5s linear infinite;
+    animation-name: wheel;
+
+    position:relative;
+    top:50px;
+    right:240px;
+}
+
+.container_4{
+    overflow-x: hidden;
+    z-index: -10;
+    background-repeat: repeat-x;
+    height:730px;
+    width:200%;
+    animation: run 5s linear infinite;
+    animation-name: run;
+}
+
+@keyframes run {
+    100%{ 
+       transform: translateX(-1400px);
+    }
+  }
+
+
